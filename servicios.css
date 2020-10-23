@@ -1,0 +1,82 @@
+:root{
+    --pink:#022d4f;
+    --black:#252a34;
+    --gray:#878085;
+    --red:#022d4f;
+    --gray2:#505B70;
+    --green:#f71735;
+}
+.liderazgo
+{
+    background-image:    linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ), url(images/liderazgo.jpg);
+    /* background: url(images/liderazgo.jpg); */
+    width: 80%;
+    border-radius: 20px;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    filter: grayscale(0.8);
+    color: white;
+    background-attachment: fixed;
+}
+.administracion
+{
+    background-image:    linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ), url(images/administracion-tiempo.jpg);
+    /* background: url(images/administracion-tiempo.jpg); */
+    width: 80%;
+    border-radius: 20px;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    filter: grayscale(0.8);
+    color: white;
+    background-attachment: fixed;
+}
+.team
+{
+    background-image:    linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ), url(images/team.jpg);
+    /* background: url(images/team.jpg); */
+    width: 80%;
+    border-radius: 20px;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    filter: grayscale(0.8);
+    color: white;
+    background-attachment: fixed;
+}
+@media only screen and (max-width:770px)
+{
+    .border-right
+    {
+      border-right: 0px solid #dee2e6 !important;
+    }
+    .liderazgo,.administracion,.team
+    {
+      background-attachment:scroll
+    }
+    .servicios-pag
+    {
+      width: 80% !important;
+    }
+}
+@media only screen and (max-width:570px)
+{
+  .desaparecer h6
+  {
+    font-size: 0px;
+  }
+  .desaparecer p
+  {
+    font-size: 0px;
+  }
+}

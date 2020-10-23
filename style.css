@@ -1,0 +1,531 @@
+:root{
+    --pink:#022d4f;
+    --black:#252a34;
+    --gray:#878085;
+    --red:#022d4f;
+    --gray2:#505B70;
+    --green:#f71735;
+}
+section {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+@font-face
+{
+    font-family: 'intensa';
+    src: url(font/Intensa\ Fuente.ttf);
+}
+html {
+    scroll-behavior: smooth;
+  }
+#imagen-principal
+{
+    width: 100%;
+    height: 88vh; 
+}
+#imagen-principal:before
+{
+    content:"";
+    position: absolute;
+    background-image:    linear-gradient(
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+      ), url(images/foto-portada.jpg);
+    width: 100%;
+    height: 88vh; 
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(100%);
+    transition: 1s;
+}
+#imagen-principal-gris
+{
+    width: 100%;
+    height: 88vh; 
+}
+#imagen-principal-gris:before
+{
+    content:"";
+    position: absolute;
+    background-image:    linear-gradient(
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+      ), url(images/foto-portada.jpg);
+    width: 100%;
+    height: 88vh; 
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(100%);
+    transition: 1s;
+}
+#imagen-principal:hover::before
+{
+    transition: 1s;
+    filter: none;
+}
+
+/* Navegacion */
+.navegacion
+{
+    background: var(--red);
+
+}
+.navegacion a
+{
+    width: 50%;
+}
+.navegacion img
+{
+    width: 45%;
+}
+nav .tamano-letra
+{
+    font-family: "intensa";
+    font-size: 38px;
+}
+.custom-toggler .navbar-toggler-icon {
+    background-image: url(images/bar.png);
+}
+.custom-toggler.navbar-toggler {
+    color: aliceblue;
+    border-color: rgb(255, 255, 255);
+} 
+.nav-item:hover
+{
+    text-decoration: underline white;
+}
+
+#link-quienes
+{
+    width: 120%;
+}
+/*Mision*/
+.mision
+{
+    width: 70%;
+}
+
+
+
+
+
+
+/*//////////////////////*/
+.principios
+{
+    width: 90%;
+    border:5px solid var(--green);
+    border-radius: 300px;
+}
+.principios .row img 
+{
+    width: 15rem;
+}
+/*//////////////////////*/
+.diagonal-box {
+    background-image: linear-gradient(45deg,#D5D8DC ,var(--green) );
+    transform: skewY(-7deg);
+    -webkit-transform: skewY(-7deg);
+    -moz-transform: skewY(-7deg);
+    -ms-transform: skewY(-7deg);
+    -o-transform: skewY(-7deg);
+} 
+.sacar-diagonal    
+{
+    transform: skewY(7deg);
+    -webkit-transform: skewY(7deg);
+    -moz-transform: skewY(7deg);
+    -ms-transform: skewY(7deg);
+    -o-transform: skewY(7deg);
+}
+.padding-top-extenso
+{
+    padding-top: 7%;
+}
+.padding-top-medio
+{
+    padding-top: 6%;
+}
+.margen-top-extenso
+{
+    margin-top: 7%;
+}
+.margen-fondo-extenso
+{
+    margin-bottom: 7%;
+}
+.padding-fondo-extenso
+{
+    padding-bottom: 7%;
+}
+
+
+/*Que hacemos*/
+.que-hacemos
+{
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+/*Formulario*/
+#formulario
+{
+    background-image:linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ), url(images/formulario.jpg);
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(0.8);
+}
+/*Footer*/
+footer
+{
+    background-color: var(--pink);
+}
+footer .border-right
+{
+    height:270px;
+}
+.logos
+{
+    width:20%;
+}
+footer a:hover
+{
+    text-decoration: none;
+}
+
+.creacion
+{
+    background: #252a34;
+    padding:5px;
+}
+
+.creacion a
+{
+    color:var(--green);
+}
+
+/*Generales*/
+h1,h2,h3{
+    font-size: 48px;
+    text-shadow: 2px 2px 2px black;
+}
+h4{
+    font-size: 35px;
+    text-shadow: 2px 2px 2px black;
+}
+h6{
+    text-shadow: 2px 2px 2px black;
+    font-size: 30px;
+}
+p, label, ::placeholder
+{
+    font-size: 22px;
+}
+hr{
+    border: 2px solid black;
+    background-color: black;
+}
+.verde
+{
+    color: var(--green);
+    text-shadow: 2px 2px 2px black;
+}
+
+.redondear
+{
+    border-radius: 15px;
+}
+.carousel-indicators i
+{
+    height: 100px;
+}
+
+/*Vision e imagenes*/
+/*hoverrrrrrrrrrrrrrrrrrrrrrrrrrrr*/
+
+.content-all{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.content-img{
+    width: 500px;
+    /* height: 400px; */
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.content-img img{
+    width: 100%;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+    filter: grayscale(1);
+}
+.content-all :hover
+{
+    filter: none;
+}
+
+.content-1{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    background: var(--pink);
+    opacity: 0.4;
+    -webkit-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+    margin-left: -750px;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+}
+
+.content-2{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    background: var(--pink);
+    opacity: 0.4;
+    -webkit-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+    margin-left: -800px;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+}
+
+
+.content-3{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    background: var(--pink);
+    opacity: 0.4;
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    margin-left: -800px;
+    margin-top: -500px;
+    -webkit-transition: all 900ms;
+    transition: all 900ms;
+    -webkit-box-shadow: 0px 1px 20px -5px black;
+    box-shadow: 0px 1px 20px -5px black;
+}
+
+.content-4{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    background: var(--pink);
+    opacity: 0.4;
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    margin-left: -850px;
+    margin-top: -500px;
+    -webkit-transition: all 700ms;
+    transition: all 700ms;
+}
+
+.content-img:hover .content-1{
+    width: 222%;
+    -webkit-transition: all 900ms;
+    transition: all 900ms;
+    filter: none;
+}
+
+.content-img:hover .content-2{
+    width: 222%;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+    filter: none;
+}
+
+.content-img:hover .content-3{
+    width: 222%;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+    filter: none;
+}
+
+.content-img:hover .content-4{
+    width: 222%;
+    -webkit-transition: all 700ms;
+    transition: all 700ms;
+    filter: none;
+}
+
+.content-img:hover img{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+    opacity: 0.8;
+    filter: none;
+}
+
+.content-txt{
+    position: absolute;
+    top: 0;
+    text-align: center;
+    width: 70%;
+    padding: 10px;
+    z-index: 10;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+#felicidad
+{
+    margin-top: 0px;
+}
+
+.content-txt h2{
+    opacity: 0;
+    -webkit-transform: scale(0.2);
+    transform: scale(0.2);
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+}
+
+.content-txt p{
+    margin-top: 10px;
+    opacity: 0;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+}
+
+.content-img:hover h2{
+    opacity: 1;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.content-img:hover p{
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+}
+
+/*Media query*/
+@media only screen and (max-width:1200px)
+{
+    .disfrutamos
+    {
+        padding-bottom: 80px;
+    }
+}
+
+@media only screen and (max-width:980px)
+{
+    header .img-cabecera
+    {
+        width: 2000px;
+    }
+    h1,h2,h3
+    {
+        font-size: 30px;
+    }
+    h4,h6
+    {
+        font-size: 25px;
+    }
+    p
+    {
+        font-size: 20px;
+    }
+    .mision
+    {
+        width: 90%;
+    }
+    .principios .row img
+{
+    width: 10rem;
+}
+    #felicidad
+    {
+        margin-top:20px;
+    }
+    .content-txt
+    {
+        margin-left: 20px;
+    }
+    .disfrutamos
+    {
+        padding-bottom: 0px;
+    }
+    
+}
+@media only screen and (max-width:640px)
+{
+
+    footer
+    {
+        padding-bottom: 20px;
+    }
+    .content-img img
+    {
+        height: 290px;
+    }
+    .navegacion img
+    {
+        width: 90%;
+    }
+    .carousel-item img
+    {
+        width: 100%!important;
+    }
+    #imagen-principal
+    {
+        width: 100%;
+        height: 82vh; 
+        background-attachment:scroll
+    }
+    #imagen-principal:before
+    {
+        width: 100%;
+        height: 82vh; 
+        background-attachment:scroll
+    }
+    #imagen-principal-gris
+    {
+        width: 100%;
+        height: 82vh; 
+        background-attachment:scroll
+    }
+    #imagen-principal-gris:before
+    {
+        width: 100%;
+        height: 82vh; 
+        background-attachment:scroll
+    }
+    p
+    {
+        font-size: 18px;
+    }
+    ::placeholder
+    {
+    font-size: 17px;
+    }
+}

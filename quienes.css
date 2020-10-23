@@ -1,0 +1,113 @@
+:root{
+    --pink:#022d4f;
+    --black:#252a34;
+    --gray:#878085;
+    --red:#022d4f;
+    --gray2:#505B70;
+    --green:#f71735;
+}
+.quienes-pagina  img
+{
+    transition: 800ms;
+    filter: grayscale(1);
+}
+.quienes-pagina  img:hover
+{
+    transition: 800ms;
+    filter: none;
+}
+.quienes-pagina .row h6
+{
+    color: var(--red);
+}
+.que-diagonal
+{   
+    color: white;
+    background:url(images/brujula.png);
+    height: 60vh; 
+    background-position: center;  
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    filter: grayscale(0.8);
+
+}
+
+.ver-servicios .contenedor{
+    position: relative;  
+    display: inline-block;
+    text-align: center;
+    filter: grayscale(0.8);
+    transition: 800ms;
+}
+.ver-servicios .contenedor:hover
+{
+    transition: 800ms;
+    filter: none;
+}
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.bold
+{
+    color: white;
+    text-shadow: 5px 5px 5px black;
+}
+.contenedor img
+{
+    width: 80%;
+}
+
+.ver-servicios h3
+{
+    color: black;
+}
+
+/* MEDIA*/
+@media only screen and (max-width:1480px)
+{
+    .bold
+    {
+        font-size: 35px;
+    }
+}
+@media only screen and (max-width:1200px)
+{
+    .bold
+    {
+        font-size: 24px;
+    }
+}
+@media only screen and (max-width:660px)
+{
+
+    .que-diagonal
+    {
+        padding-top: 9%;
+        height: 600px; 
+    }
+
+} 
+ @media only screen and (max-width:460px)
+{
+
+    .que-diagonal
+    {
+        padding-top: 9%;
+        height: 700px; 
+    }
+
+}
+
+@media only screen and (max-width:380px)
+{
+
+    .que-diagonal
+    {
+        padding-top: 9%;
+        height: 800px; 
+    }
+
+} 
